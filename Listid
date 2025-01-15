@@ -3,6 +3,7 @@ vokaali=["a","e","u","o","i","ü","ö","õ","ä"]
 konsonanti="qwrtypsdfghjklzxcvbnm"
 markid=string.punctuation #!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~.
 v=k=m=t=0
+
 while True:
      tekst=input("Sisesta mingi tekst: ").lower()
      if tekst.isdigit():
