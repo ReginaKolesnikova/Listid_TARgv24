@@ -4,6 +4,10 @@ konsonanti="qwrtypsdfghjklzxcvbnm"
 markid=string.punctuation #!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~.
 v=k=m=t=0
 
+
+#1
+
+
 while True:
      tekst=input("Sisesta mingi tekst: ").lower()
      if tekst.isdigit():
@@ -26,7 +30,7 @@ while True:
      print("Tühikud:", t)
 
 
-#2 Loetelu
+#2
 
 nimed=[]
 for i in range(5):
@@ -40,3 +44,23 @@ print("Sorteerimise pärast: ")
 print(nimed)
 print(f"Viimasena lisatud nimi on: {nimi}")  # {nimi} or {nimed[4]}, {nimed[-1]}
 
+v=input("Kas muudame nimeid?: ").lower()
+if v=="jah":
+    v=input("Nimi või positsioon: N/P").upper()
+    if v=="P":
+         print("Sisesta nime asukoht")
+         v=int(input())
+         uus_nimi=input("Uus nimi: ")
+         nimed [v-1]=uus_nimi
+
+    else:
+         print("Sisesta nimi")
+         uus_nimi=input("Vana nimi: )
+         v=nimed.index(vana_nimi)
+         uus_nimi=input("Uus nimi: ")
+         nimed[v]=uus_nimi
+    print(nimed)
+# dublikatid 1
+dublta=list(set(nimed))
+print(dublta)
+# dublikatid 2
