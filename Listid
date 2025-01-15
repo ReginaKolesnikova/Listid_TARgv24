@@ -24,3 +24,19 @@ while True:
      print("Konsonanti:", k)
      print("Markid:", m)
      print("Tühikud:", t)
+
+
+#2 Loetelu
+
+nimed=[]
+for i in range(5):
+    nimi=input(f"{i+1}.Nimi: ")
+    nimed.append(nimi)
+print("Enne sorteerimist: ")
+print(nimed)
+
+nimed.sort()
+print("Sorteerimise pärast: ")
+print(nimed)
+print(f"Viimasena lisatud nimi on: {nimi}")  # {nimi} or {nimed[4]}, {nimed[-1]}
+
