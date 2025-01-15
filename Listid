@@ -64,3 +64,19 @@ if v=="jah":
 dublta=list(set(nimed))
 print(dublta)
 # dublikatid 2
+dublta=[]
+for nimi in nimed:
+    if nimi not in dublta:
+         dublta.append(nimi)
+print ("Mitte korduv loetelu 2. variant")
+print(dublta)
+
+vanused=[]
+for i in range(7):
+    vanus=int(input(f"{i+1}. Vanus: "))
+    vanused.append(vanus)
+print(f"Sisestatud vanused: {vanused}")
+print(max(vanused)) #maksimaalne arv
+print(min(vanused)) #minimaalne arv
+print(sum(vanused)/len(vanused)) #keskmine arv vanusest
+
