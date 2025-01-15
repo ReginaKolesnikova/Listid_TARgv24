@@ -94,4 +94,20 @@ for vartus in Värtused:
 
 print()
 
+#4
+indexid=["Tallinn","Narva, Narva-Jõesuu","Kohtla-Järve","Ida-Virumaa, Lääne-Virumaa, Jõgevamaa","Tartu linn","Tartumaa, Põlvamaa, Võrumaa, Valgamaa","Viljandimaa, Järvamaa, Harjumaa, Raplamaa","Pärnumaa","Läänemaa, Hiiumaa, Saaremaa"]
+while 1: # same as While True
+    try:
+       postiindex=int(input("Postiindeks: "))#12345
+        if len(str(postiindex))==5: #"12345"
+            break
+        else:
+            print("On vaja 5 sümboleid!")
+    except :
+         print("Viga!")
+print("Postiindeksi analüüs: ")
+index_list=list(str(postiindex)) #"1" , "2", "3"...
+s1=int(index_list[0]) #1->0 Tallinn indexiga 0
+print(f"Postiindeks {postiindex} on {indexid[s1-1]} piirkond") #12345 Tallinn
+
 
