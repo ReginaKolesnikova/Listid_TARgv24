@@ -80,3 +80,18 @@ print(max(vanused)) #maksimaalne arv
 print(min(vanused)) #minimaalne arv
 print(sum(vanused)/len(vanused)) #keskmine arv vanusest
 
+
+#3
+Värtused=[]
+read=int(input("Reade kogus: "))
+for i in range(read):
+     arv=int(input("Arv"))
+     Värtused.append(arv)
+print(Värtused)
+s=input("Sümbol: ")
+for vartus in Värtused:
+    print(vartus*s)
+
+print()
+
+
